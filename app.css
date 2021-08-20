@@ -1,0 +1,119 @@
+body{
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+    margin: 0;
+    width: 100%;
+}
+h2{
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-weight: 900;
+}
+p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+a{
+    border-bottom: 1px solid hsl(245, 75%, 52%);
+    cursor: pointer;
+    color: hsl(245, 75%, 52%);
+}
+a:hover{
+    border-bottom: none;
+    opacity: 0.75;
+}
+button{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+.btn_primary{
+    background-color: hsl(245, 75%, 52%);
+    border: 1px solid hsl(245, 75%, 52%);
+    color: #fff;
+    margin-bottom: 10px;
+}
+.btn_primary:hover{
+    opacity: 0.75;
+}
+.btn_secondary{
+    background-color: #fff;
+    border: none;
+    color: hsl(224, 23%, 55%);
+}
+.btn_secondary:hover{
+    color: hsl(223, 47%, 23%);
+}
+.card{
+    border-radius: 15px;
+    width: 90%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.card_img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card_body{
+    padding: 30px 40px;
+}
+.card_p{
+    margin: 0;
+    width: 100%;
+}
+.card_annual_plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px){
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+    p{
+        font-size: 18px;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .btn_primary{
+        margin-bottom: 10px;
+    }
+    .card{
+        width: 30%;
+        border-radius: 6px;
+    }
+    .card_img{
+        width: 100%;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .card_body{
+        padding: 30px 40px;
+    }
+    .card_p{
+        margin: 0;
+    }
+    .card_annual_plan{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
